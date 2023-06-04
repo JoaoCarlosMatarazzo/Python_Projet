@@ -1,0 +1,30 @@
+#Porjeto bot-1 (básico)
+import pyautogui
+
+pyautogui.PAUSE = 4
+
+#Abrir a ferramenta
+pyautogui.press("win")
+pyautogui.write("login.xlsx")
+pyautogui.press("backspace")
+pyautogui.press("enter")
+
+#Preencher o login
+pyautogui.click(x=1198, y=806)
+pyautogui.click(x=562, y=343)
+pyautogui.write("Eragon")
+
+#Preencher a senha
+pyautogui.click(x=575, y=383)
+pyautogui.write("31-01-71")
+
+#Clicar em fazer o login
+pyautogui.click(x=474, y=502)
+
+
+#como saber a posição do local da senha, login, etc:
+
+#-import time
+#-time.sleep(30)
+#-pyautogui.position()
+#-print(pyautogui.position())
